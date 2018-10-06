@@ -1,19 +1,19 @@
 <template>
   <mainlayout>
-    <a :href="HouseBlocks.site">HouseBlocks</a>
-    <img :src="HouseBlocks.img" />
-    <a :href="csvToChart.site">csvTochat</a>
-    <img :src="csvToChart.img" />
-    <a :href="CameraIdea.site">CameraIdea</a>
-    <img :src="CameraIdea.img" />
-    <a :href="RandPlat.site">RandPlat</a>
-    <img :src="RandPlat.img" />
-    <a :href="ComputerBattle.site">ComputerBattle</a>
-    <img :src="ComputerBattle.img" />
-    <a :href="imageToCode.site">imageToCode</a>
-    <img :src="imageToCode.img" />
-    <a :href="XmJUMP.site">XmJUMP</a>
-    <img :src="XmJUMP.img" />
+    <a :href="this.HouseBlocks.site">HouseBlocks</a>
+    <img :src="this.HouseBlocks.img" />
+    <a :href="this.csvTochat.site">csvTochat</a>
+    <img :src="this.csvTochat.img" />
+    <a :href="this.CameraIdea.site">CameraIdea</a>
+    <img :src="this.CameraIdea.img" />
+    <a :href="this.RandPlat.site">RandPlat</a>
+    <img :src="this.RandPlat.img" />
+    <a :href="this.ComputerBattle.site">ComputerBattle</a>
+    <img :src="this.ComputerBattle.img" />
+    <a :href="this.imageToCode.site">imageToCode</a>
+    <img :src="this.imageToCode.img" />
+    <a :href="this.XmJUMP.site">XmJUMP</a>
+    <img :src="this.XmJUMP.img" />
   </mainlayout>
 </template>
 
