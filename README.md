@@ -72,4 +72,6 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
   </mainLayout>
 </template>
 ```
+      
+      > More pages just like this and App will import them to use tabs to play.
 
