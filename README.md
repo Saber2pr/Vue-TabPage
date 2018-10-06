@@ -1,7 +1,8 @@
 # saber2pr
 
 > A Vue.js project, it extends a example from https://jsfiddle.net/chrisvfritz/Lp20op9o/   
-![loadingImage...](https://github.com/Saber2pr/MyWeb/blob/master/resource/Vue.jpg)
+   
+   ![loadingImage...](https://github.com/Saber2pr/MyWeb/blob/master/resource/Vue.jpg)
 
 ## If you like it, you can go to branch 'project' and have a fork or clone!
 
