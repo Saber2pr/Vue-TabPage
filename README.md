@@ -1,6 +1,8 @@
 # saber2pr
 
-> A Vue.js project
+> A Vue.js project, it extends a example from https://jsfiddle.net/chrisvfritz/Lp20op9o/
+
+## it's a start to go to branch 'project' and have a fork or clone!
 
 ## Build Setup
 
@@ -28,3 +30,44 @@ npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## Details
+> TabRouter.vue   
+```vue
+<template>
+  <div>
+    <button v-for="tab in tabs"
+            :key="tab"
+            :class="['tab-button', { active: currentTab === tab}]"
+            @click="post(tab)">{{ tab }}</button>
+    <slot></slot>
+  </div>
+</template>
+
+```
+> App.vue
+```vue
+<template>
+  <center>
+    <tab-router :tabs="['Home', 'Project', 'About']"
+                @tab="(tab)=>{page=tab}">
+      <component :is="page||'Home'"></component>
+    </tab-router>
+  </center>
+</template>
+```
+> Home.vue
+```vue
+<template>
+  <mainLayout>
+    <p>{{title}}</p>
+    <img :src="logo" />
+    <p>{{author}}</p>
+    <p>{{readME}}</p>
+    <a :href="website1.href">{{website1.name}}</a>
+    <a :href="website2.href">{{website2.name}}</a>
+    <a :href="website3.href">{{website3.name}}</a>
+  </mainLayout>
+</template>
+```
+
