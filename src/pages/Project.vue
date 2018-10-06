@@ -1,19 +1,19 @@
 <template>
   <mainlayout>
-    <a href="https://saber2pr.github.io/HouseBlocks/HouseBlocks_CocosCreator/build/web-mobile0.1/">HouseBlocks</a>
-    <img src="../common/img/newHouseBlocks.jpg" />
-    <a href="https://saber2pr.github.io/csvToChart/">csvTochat</a>
-    <img src="../common/img/csvToChartView.jpg" />
-    <a href="https://saber2pr.github.io/CocosCreatorExam/CameraIdea/build/web-mobile/">CameraIdea</a>
-    <img src="../common/img/camera.gif" />
-    <a href="https://saber2pr.github.io/CocosCreatorExam/RandPlat/build/web-mobile/">RandPlat</a>
-    <img src="../common/img/RandPlat.jpg" />
-    <a href="https://saber2pr.github.io/ComputerBattle/build/web-mobile/">ComputerBattle</a>
-    <img src="../common/img/CompView.gif" />
-    <a href="https://github.com/Saber2pr/openCvImageTransformer">imageToCode</a>
-    <img src="../common/img/badapple.jpg" />
-    <a href="https://github.com/Saber2pr/XM_JUMP">XMJUMP</a>
-    <img src="../common/img/XM_JUMP.jpg" />
+    <a :href="HouseBlocks.site">HouseBlocks</a>
+    <img :src="HouseBlocks.img" />
+    <a :href="csvToChart.site">csvTochat</a>
+    <img :src="csvToChart.img" />
+    <a :href="CameraIdea.site">CameraIdea</a>
+    <img :src="CameraIdea.img" />
+    <a :href="RandPlat.site">RandPlat</a>
+    <img :src="RandPlat.img" />
+    <a :href="ComputerBattle.site">ComputerBattle</a>
+    <img :src="ComputerBattle.img" />
+    <a :href="imageToCode.site">imageToCode</a>
+    <img :src="imageToCode.img" />
+    <a :href="XmJUMP.site">XmJUMP</a>
+    <img :src="XmJUMP.img" />
   </mainlayout>
 </template>
 
@@ -23,6 +23,38 @@ import mainlayout from '../layouts/Main.vue'
 export default {
   components: {
     mainlayout
+  },
+  data () {
+    return {
+      HouseBlocks: {
+        site: 'https://saber2pr.github.io/HouseBlocks/HouseBlocks_CocosCreator/build/web-mobile0.1/',
+        img: require('../common/img/newHouseBlocks.jpg')
+      },
+      csvTochat: {
+        site: 'https://saber2pr.github.io/csvToChart/',
+        img: require('../common/img/csvToChartView.jpg')
+      },
+      CameraIdea: {
+        site: 'https://saber2pr.github.io/CocosCreatorExam/CameraIdea/build/web-mobile/',
+        img: require('../common/img/camera.gif')
+      },
+      RandPlat: {
+        site: 'https://saber2pr.github.io/CocosCreatorExam/RandPlat/build/web-mobile/',
+        img: require('../common/img/RandPlat.jpg')
+      },
+      ComputerBattle: {
+        site: 'https://saber2pr.github.io/ComputerBattle/build/web-mobile/',
+        img: require('../common/img/CompView.gif')
+      },
+      imageToCode: {
+        site: 'https://github.com/Saber2pr/openCvImageTransformer',
+        img: require('../common/img/badapple.jpg')
+      },
+      XmJUMP: {
+        site: 'https://github.com/Saber2pr/XM_JUMP',
+        img: require('../common/img/XM_JUMP.jpg')
+      }
+    }
   }
 }
 </script>
