@@ -1,24 +1,24 @@
 <template>
   <mainlayout>
-    <a :href="this.HouseBlocks.site">HouseBlocks</a>
-    <img :src="this.HouseBlocks.img" />
-    <a :href="this.csvTochat.site">csvTochat</a>
-    <img :src="this.csvTochat.img" />
-    <a :href="this.CameraIdea.site">CameraIdea</a>
-    <img :src="this.CameraIdea.img" />
-    <a :href="this.RandPlat.site">RandPlat</a>
-    <img :src="this.RandPlat.img" />
-    <a :href="this.ComputerBattle.site">ComputerBattle</a>
-    <img :src="this.ComputerBattle.img" />
-    <a :href="this.imageToCode.site">imageToCode</a>
-    <img :src="this.imageToCode.img" />
-    <a :href="this.XmJUMP.site">XmJUMP</a>
-    <img :src="this.XmJUMP.img" />
+    <a :href="project1.site">{{project1.name}}</a>
+    <img :src="project1.img" />
+    <a :href="project2.site">{{project2.name}}</a>
+    <img :src="project2.img" />
+    <a :href="project3.site">{{project3.name}}</a>
+    <img :src="project3.img" />
+    <a :href="project4.site">{{project4.name}}</a>
+    <img :src="project4.img" />
+    <a :href="project5.site">{{project5.name}}</a>
+    <img :src="project5.img" />
+    <a :href="project6.site">{{project6.name}}</a>
+    <img :src="project6.img" />
+    <a :href="project7.site">{{project7.name}}</a>
+    <img :src="project7.img" />
   </mainlayout>
 </template>
 
 <script>
-import mainlayout from '../layouts/Main.vue'
+import mainlayout from '../layouts/Main'
 
 export default {
   components: {
@@ -26,33 +26,40 @@ export default {
   },
   data () {
     return {
-      HouseBlocks: {
+      project1: {
+        name: 'HouseBlocks',
         site: 'https://saber2pr.github.io/HouseBlocks/HouseBlocks_CocosCreator/build/web-mobile0.1/',
-        img: require('../common/img/newHouseBlocks.jpg')
+        img: 'https://github.com/Saber2pr/MyWeb/raw/master/resource/newHouseBlocks.jpg'
       },
-      csvTochat: {
+      project2: {
+        name: 'csvTochat',
         site: 'https://saber2pr.github.io/csvToChart/',
-        img: require('../common/img/csvToChartView.jpg')
+        img: 'https://github.com/Saber2pr/MyWeb/raw/master/resource/csvToChartView.jpg'
       },
-      CameraIdea: {
+      project3: {
+        name: 'CameraIdea',
         site: 'https://saber2pr.github.io/CocosCreatorExam/CameraIdea/build/web-mobile/',
-        img: require('../common/img/camera.gif')
+        img: 'https://github.com/Saber2pr/MyWeb/raw/master/resource/camera.gif'
       },
-      RandPlat: {
+      project4: {
+        name: 'RandPlat',
         site: 'https://saber2pr.github.io/CocosCreatorExam/RandPlat/build/web-mobile/',
-        img: require('../common/img/RandPlat.jpg')
+        img: 'https://github.com/Saber2pr/MyWeb/raw/master/resource/RandPlat.jpg'
       },
-      ComputerBattle: {
+      project5: {
+        name: 'ComputerBattle',
         site: 'https://saber2pr.github.io/ComputerBattle/build/web-mobile/',
-        img: require('../common/img/CompView.gif')
+        img: 'https://github.com/Saber2pr/MyWeb/raw/master/resource/CompView.gif'
       },
-      imageToCode: {
+      project6: {
+        name: 'imageToCode',
         site: 'https://github.com/Saber2pr/openCvImageTransformer',
-        img: require('../common/img/badapple.jpg')
+        img: 'https://github.com/Saber2pr/MyWeb/raw/master/resource/badapple.jpg'
       },
-      XmJUMP: {
+      project7: {
+        name: 'XmJUMP',
         site: 'https://github.com/Saber2pr/XM_JUMP',
-        img: require('../common/img/XM_JUMP.jpg')
+        img: 'https://github.com/Saber2pr/MyWeb/raw/master/resource/XM_JUMP.jpg'
       }
     }
   }

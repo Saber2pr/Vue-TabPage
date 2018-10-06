@@ -9,7 +9,6 @@
 <script>
 export default {
   beforeCreate () {
-    // 背景颜色
     document.querySelector('body').setAttribute('style', 'background-color:rgb(25, 26, 33)')
   },
   beforeDestroy () {
@@ -18,7 +17,6 @@ export default {
 </script>
 
 <style scoped>
-/* 定义一些layout的公共属性 */
 @font-face {
   font-family: MarkerFelt;
   src: url('../common/fonts/MarkerFelt.ttf');

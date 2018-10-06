@@ -1,28 +1,46 @@
 <template>
-  <!-- 下面实例化mainLayout标签，并注入内容到slot -->
   <mainLayout>
-    <p>AK-12's Website</p>
-    <img src="../common/img/AK12.jpg" />
-    <p>I am AK-12</p>
-    <p>the Website is based on Vue</p>
-    <a href="https://github.com/Saber2pr">github</a>
-    <a href="https://blog.csdn.net/u011607490">csdn</a>
-    <a href="https://space.bilibili.com/71959910/#/">bilibili</a>
+    <p>{{title}}</p>
+    <img :src="logo" />
+    <p>{{author}}</p>
+    <p>{{readME}}</p>
+    <a :href="website1.href">{{website1.name}}</a>
+    <a :href="website2.href">{{website2.name}}</a>
+    <a :href="website3.href">{{website3.name}}</a>
   </mainLayout>
 </template>
 
 <script>
-import mainLayout from '../layouts/Main.vue'
+import mainLayout from '../layouts/Main'
 
 export default {
   components: {
     mainLayout
+  },
+  data () {
+    return {
+      title: "AK-12's Website",
+      logo: 'https://github.com/Saber2pr/MyWeb/raw/master/resource/AK12.jpg',
+      author: 'I am AK-12',
+      readME: 'the Website is based on Vue',
+      website1: {
+        name: 'github',
+        href: 'https://github.com/Saber2pr'
+      },
+      website2: {
+        name: 'csdn',
+        href: 'https://blog.csdn.net/u011607490'
+      },
+      website3: {
+        name: 'bilibili',
+        href: 'https://space.bilibili.com/71959910/#/'
+      }
+    }
   }
 }
 </script>
 
 <style scoped>
-/* 关于通用标签（p，a）：父组件定义颜色样式，子组件定义大小 */
 img {
   width: 100px;
   border-radius: 50%;
