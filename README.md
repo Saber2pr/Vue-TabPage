@@ -4,7 +4,7 @@
    
    ![loadingImage...](https://github.com/Saber2pr/MyWeb/blob/master/resource/Vue.jpg)
 
-## If you like it, you can go to branch 'project' and have a fork or clone!
+## easy to make a tabpage!
 
 ## Build Setup
 
