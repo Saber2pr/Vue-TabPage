@@ -2,7 +2,7 @@
 
 > A Vue.js project, it extends a example from https://jsfiddle.net/chrisvfritz/Lp20op9o/
 
-![loadingImage...](https://github.com/Saber2pr/MyWeb/row/master/resource/Vue.jpg)
+![loadingImage...](https://github.com/Saber2pr/MyWeb/raw/master/resource/Vue.jpg)
 
 - easy to make a tabpage!
 
