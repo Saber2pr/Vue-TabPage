@@ -43,8 +43,8 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
     <button v-for="tab in tabs"
             :key="tab"
             :class="['tab-button', { active: currentTab === tab}]"
-            @click="post(tab)">{{ tab }}</button>
-    <slot></slot>
+            @click="currentTab=tab">{{ tab }}</button>
+    <slot :currentTab="currentTab"></slot>
   </div>
 </template>
 ```
@@ -54,9 +54,11 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ```vue
 <template>
   <center>
-    <tab-router :tabs="['Home', 'Project', 'About']"
-                @tab="(tab)=>{page=tab}">
-      <component :is="page||'Home'"></component>
+    <tab-router :tabs="['Home', 'Project', 'About']">
+      <!-- declare a variable in tab and get data from it -->
+      <template slot-scope="TabRouter">
+        <component :is="TabRouter.currentTab"></component>
+      </template>
     </tab-router>
   </center>
 </template>
