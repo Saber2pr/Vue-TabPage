@@ -1,4 +1,4 @@
-# Vue-TabPage
+# vue-tabpage
 
 > A Vue.js project, it extends a example from https://jsfiddle.net/chrisvfritz/Lp20op9o/   
    
