@@ -1,4 +1,4 @@
-# saber2pr
+# Vue-TabPage
 
 > A Vue.js project, it extends a example from https://jsfiddle.net/chrisvfritz/Lp20op9o/   
    
