@@ -1,14 +1,14 @@
 # vue-tabpage
 
-> A Vue.js project, it extends a example from https://jsfiddle.net/chrisvfritz/Lp20op9o/   
-   
-   ![loadingImage...](https://github.com/Saber2pr/MyWeb/blob/master/resource/Vue.jpg)
+> A Vue.js project, it extends a example from https://jsfiddle.net/chrisvfritz/Lp20op9o/
 
-* easy to make a tabpage!
+![loadingImage...](https://github.com/Saber2pr/MyWeb/row/master/resource/Vue.jpg)
+
+- easy to make a tabpage!
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 npm install
 
@@ -34,7 +34,9 @@ npm test
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 ## Details
-> TabRouter.vue   
+
+> TabRouter.vue
+
 ```vue
 <template>
   <div>
@@ -45,9 +47,10 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
     <slot></slot>
   </div>
 </template>
-
 ```
+
 > App.vue
+
 ```vue
 <template>
   <center>
@@ -58,7 +61,9 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
   </center>
 </template>
 ```
+
 > Home.vue
+
 ```vue
 <template>
   <mainLayout>
@@ -72,6 +77,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
   </mainLayout>
 </template>
 ```
-### More pages just like this and the App will import them to use tabs to play.
-### ...
 
+### More pages just like this and the App will import them to use tabs to play.
+
+### ...
