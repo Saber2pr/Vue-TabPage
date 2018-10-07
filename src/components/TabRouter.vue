@@ -3,8 +3,8 @@
     <button v-for="tab in tabs"
             :key="tab"
             :class="['tab-button', { active: currentTab === tab}]"
-            @click="post(tab)">{{ tab }}</button>
-    <slot></slot>
+            @click="currentTab=tab">{{ tab }}</button>
+    <slot :currentTab="currentTab"></slot>
   </div>
 </template>
 
@@ -18,12 +18,6 @@ export default {
     return {
       // default tab
       currentTab: this.tabs[0]
-    }
-  },
-  methods: {
-    post (tab) {
-      this.currentTab = tab
-      this.$emit('tab', tab)
     }
   }
 }

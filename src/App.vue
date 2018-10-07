@@ -1,8 +1,10 @@
 <template>
   <center>
-    <tab-router :tabs="['Home', 'Project', 'About']"
-                @tab="(tab)=>{page=tab}">
-      <component :is="page||'Home'"></component>
+    <tab-router :tabs="['Home', 'Project', 'About']">
+      <!-- declare a variable in tab and get data from it -->
+      <template slot-scope="TabRouter">
+        <component :is="TabRouter.currentTab"></component>
+      </template>
     </tab-router>
   </center>
 </template>
@@ -14,11 +16,6 @@ import Project from './pages/Project'
 import About from './pages/About'
 
 export default {
-  data () {
-    return {
-      page: null
-    }
-  },
   components: {
     TabRouter,
     Home,
