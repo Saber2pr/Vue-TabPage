@@ -44,6 +44,7 @@ export default {
 }
 .tab-button.active {
   color: rgb(98, 114, 164);
+  background: rgb(40, 42, 54);
   box-shadow: rgb(0, 0, 0) -5px 0px 10px;
 }
 </style>
