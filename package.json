@@ -1,7 +1,7 @@
 {
   "name": "vue-tabpage",
   "version": "1.0.0",
-  "description": "A Vue.js project",
+  "description": "A Vue.js project, it extends a example from https://jsfiddle.net/chrisvfritz/Lp20op9o/",
   "author": "saber2pr <saber2pr@gmail.com>",
   "private": true,
   "scripts": {
