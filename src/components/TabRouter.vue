@@ -16,6 +16,7 @@ export default {
   },
   data () {
     return {
+      // default tab
       currentTab: this.tabs[0]
     }
   },
