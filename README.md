@@ -47,6 +47,20 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
     <slot :currentTab="currentTab"></slot>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    tabs: Array
+  },
+  data() {
+    return {
+      // default tab
+      currentTab: this.tabs[0]
+    }
+  }
+}
+</script>
 ```
 
 > App.vue
@@ -62,6 +76,22 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
     </tab-router>
   </center>
 </template>
+
+<script>
+import TabRouter from './components/TabRouter'
+import Home from './pages/Home'
+import Project from './pages/Project'
+import About from './pages/About'
+
+export default {
+  components: {
+    TabRouter,
+    Home,
+    Project,
+    About
+  }
+}
+</script>
 ```
 
 > Home.vue
