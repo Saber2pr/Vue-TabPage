@@ -3,6 +3,7 @@
     <button v-for="tab in tabs"
             :key="tab"
             :class="['tab-button', { active: currentTab === tab}]"
+            :style="{ width: widthData }"
             @click="currentTab=tab">{{ tab }}</button>
     <slot :currentTab="currentTab"></slot>
   </div>
@@ -19,6 +20,11 @@ export default {
       // default tab
       currentTab: this.tabs[0]
     }
+  },
+  computed: {
+    widthData () {
+      return 100 / this.tabs.length + '%'
+    }
   }
 }
 
@@ -26,7 +32,6 @@ export default {
 
 <style>
 .tab-button {
-  width: 100px;
   padding: 6px 10px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -45,6 +50,6 @@ export default {
 .tab-button.active {
   color: rgb(98, 114, 164);
   background: rgb(40, 42, 54);
-  box-shadow: rgb(0, 0, 0) -5px 0px 10px;
+  box-shadow: rgb(0, 0, 0) -5px 5px 10px;
 }
 </style>
