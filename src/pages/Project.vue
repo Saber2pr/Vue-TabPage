@@ -1,7 +1,8 @@
 <template>
   <mainlayout>
+    <group :names="getNames()"
+           :images="['https://github.com/Saber2pr/MyWeb/raw/master/resource/newHouseBlocks.jpg']"></group>
     <tab-router :tabs="getNames()"></tab-router>
-    <elem></elem>
     <a :href="projects.pro1.site">{{projects.pro1.name}}</a>
     <img :src="projects.pro1.img" />
     <a :href="projects.pro2.site">{{projects.pro2.name}}</a>
@@ -22,23 +23,17 @@
 <script>
 import mainlayout from '../layouts/Main'
 import TabRouter from '../components/TabRouter'
-import Vue from 'vue'
-
-Vue.component('elem', {
-  render: function (h) {
-    return h({
-      template: '<p>render!</p>'
-    })
-  }
-})
+import Group from '../components/Group'
 
 export default {
   components: {
     mainlayout,
-    TabRouter
+    TabRouter,
+    Group
   },
   data () {
     return {
+      test: 'renderData',
       projects: {
         pro1: {
           name: 'HouseBlocks',
