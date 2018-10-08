@@ -15,8 +15,8 @@
 import MainLayout from './layouts/Main'
 import TabRouter from './components/TabRouter'
 import Home from './pages/Home'
-import Project from './pages/Project'
-import About from './pages/About'
+import Project from './pages/Project/Project'
+import About from './pages/About/About'
 
 export default {
   components: {

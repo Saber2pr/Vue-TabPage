@@ -1,22 +1,38 @@
 <template>
   <div>
-    <a v-for="name in names"
-       :key="name">{{name}}</a>
-    <img v-for="img in images"
-         :key="img"
-         :src="img" />
+    <div v-for="item in items"
+         :key="item.string">
+      <a :href="item.href">{{item.name}}</a>
+      <img :src="item.img" />
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: {
-    names: Array,
-    images: Array,
-    hrefs: Array
-  }
+  props: ['items']
 }
 </script>
 
-<style>
+<style scoped>
+img {
+  display: block;
+  margin-bottom: 20px;
+  max-width: 100%;
+  overflow: hidden;
+  transform: scale(0.7);
+}
+a {
+  margin-top: 20px;
+  font-size: 200%;
+  width: 190px;
+  display: block;
+  border-radius: 100%;
+  color: rgb(98, 114, 164);
+  text-decoration: none;
+}
+a:hover {
+  box-shadow: darkgrey 5px 5px 30px 5px;
+  color: rgb(116, 193, 210);
+}
 </style>
