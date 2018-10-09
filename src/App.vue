@@ -2,7 +2,6 @@
   <main-layout>
     <center>
       <tab-router :tabs="['Home', 'Project', 'About']">
-        <!-- declare a variable in tab and get data from it -->
         <template slot-scope="TabRouter">
           <component :is="TabRouter.currentTab"
                      :home="home"
