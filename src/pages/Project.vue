@@ -1,14 +1,16 @@
 <template>
   <mainlayout>
     <tab-router :tabs="getNames()"></tab-router>
-    <group :items="projects"></group>
+    <group :items="projects"
+           :width="200"
+           :fontSize="'30'"></group>
   </mainlayout>
 </template>
 
 <script>
-import mainlayout from '../../layouts/Main'
-import TabRouter from '../../components/TabRouter'
-import Group from '../../components/Group'
+import mainlayout from '../layouts/Main'
+import TabRouter from '../components/TabRouter'
+import Group from '../components/Group'
 
 export default {
   components: {
@@ -16,11 +18,7 @@ export default {
     TabRouter,
     Group
   },
-  data () {
-    return {
-      projects: require('./project.json')
-    }
-  },
+  props: ['projects'],
   methods: {
     getNames () {
       let names = []

@@ -4,37 +4,37 @@
     <img :src="logo" />
     <p>{{author}}</p>
     <p>{{readME}}</p>
-    <a :href="website1.href">{{website1.name}}</a>
-    <a :href="website2.href">{{website2.name}}</a>
-    <a :href="website3.href">{{website3.name}}</a>
+    <group :items="websites"
+           :width="90"
+           :fontSize="32"></group>
   </mainLayout>
 </template>
 
 <script>
 import mainLayout from '../layouts/Main'
+import group from '../components/Group'
 
 export default {
   components: {
-    mainLayout
+    mainLayout,
+    group
   },
-  data () {
-    return {
-      title: "AK-12's Website",
-      logo: 'https://github.com/Saber2pr/MyWeb/raw/master/resource/AK12.jpg',
-      author: 'I am AK-12',
-      readME: 'the Website is based on Vue',
-      website1: {
-        name: 'github',
-        href: 'https://github.com/Saber2pr'
-      },
-      website2: {
-        name: 'csdn',
-        href: 'https://blog.csdn.net/u011607490'
-      },
-      website3: {
-        name: 'bilibili',
-        href: 'https://space.bilibili.com/71959910/#/'
-      }
+  props: ['home'],
+  computed: {
+    title () {
+      return this.home.title
+    },
+    logo () {
+      return this.home.logo
+    },
+    author () {
+      return this.home.author
+    },
+    readME () {
+      return this.home.readME
+    },
+    websites () {
+      return this.home.websites
     }
   }
 }

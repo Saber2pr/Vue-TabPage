@@ -2,7 +2,8 @@
   <div>
     <div v-for="item in items"
          :key="item.string">
-      <a :href="item.href">{{item.name}}</a>
+      <a :href="item.href"
+         :style="{width: width + 'px', fontSize: fontSize + 'px'}">{{item.name}}</a>
       <img :src="item.img" />
     </div>
   </div>
@@ -10,7 +11,7 @@
 
 <script>
 export default {
-  props: ['items']
+  props: ['items', 'width', 'fontSize']
 }
 </script>
 
@@ -23,10 +24,8 @@ img {
   transform: scale(0.7);
 }
 a {
-  margin-top: 20px;
-  font-size: 200%;
-  width: 190px;
   display: block;
+  margin-top: 20px;
   border-radius: 100%;
   color: rgb(98, 114, 164);
   text-decoration: none;

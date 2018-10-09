@@ -1,37 +1,36 @@
-{
-  "pro1": {
+[{
     "name": "HouseBlocks",
     "href": "https://saber2pr.github.io/HouseBlocks/HouseBlocks_CocosCreator/build/web-mobile0.1/",
     "img": "https://github.com/Saber2pr/MyWeb/raw/master/resource/newHouseBlocks.jpg"
   },
-  "pro2": {
+  {
     "name": "csvTochat",
     "href": "https://saber2pr.github.io/csvToChart/",
     "img": "https://github.com/Saber2pr/MyWeb/raw/master/resource/csvToChartView.jpg"
   },
-  "pro3": {
+  {
     "name": "CameraIdea",
     "href": "https://saber2pr.github.io/CocosCreatorExam/CameraIdea/build/web-mobile/",
     "img": "https://github.com/Saber2pr/MyWeb/raw/master/resource/camera.gif"
   },
-  "pro4": {
+  {
     "name": "RandPlat",
     "href": "https://saber2pr.github.io/CocosCreatorExam/RandPlat/build/web-mobile/",
     "img": "https://github.com/Saber2pr/MyWeb/raw/master/resource/RandPlat.jpg"
   },
-  "pro5": {
+  {
     "name": "ComputerBattle",
     "href": "https://saber2pr.github.io/ComputerBattle/build/web-mobile/",
     "img": "https://github.com/Saber2pr/MyWeb/raw/master/resource/CompView.gif"
   },
-  "pro6": {
+  {
     "name": "imageToCode",
     "href": "https://github.com/Saber2pr/openCvImageTransformer",
     "img": "https://github.com/Saber2pr/MyWeb/raw/master/resource/badapple.jpg"
   },
-  "pro7": {
+  {
     "name": "XmJUMP",
     "href": "https://github.com/Saber2pr/XM_JUMP",
     "img": "https://github.com/Saber2pr/MyWeb/raw/master/resource/XM_JUMP.jpg"
   }
-}
+]
