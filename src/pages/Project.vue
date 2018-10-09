@@ -8,12 +8,12 @@
 
 <script>
 import mainlayout from '../layouts/Main'
-import Group from '../components/Group'
+import group from '../components/Group'
 
 export default {
   components: {
     mainlayout,
-    Group
+    group
   },
   props: ['projects'],
   methods: {
