@@ -43,6 +43,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
     <button v-for="tab in tabs"
             :key="tab"
             :class="['tab-button', { active: currentTab === tab}]"
+            :style="{ width: widthData }"
             @click="currentTab=tab">{{ tab }}</button>
     <slot :currentTab="currentTab"></slot>
   </div>
@@ -53,13 +54,19 @@ export default {
   props: {
     tabs: Array
   },
-  data() {
+  data () {
     return {
       // default tab
       currentTab: this.tabs[0]
     }
+  },
+  computed: {
+    widthData () {
+      return 100 / this.tabs.length + '%'
+    }
   }
 }
+
 </script>
 ```
 
@@ -67,17 +74,22 @@ export default {
 
 ```vue
 <template>
-  <center>
-    <tab-router :tabs="['Home', 'Project', 'About']">
-      <!-- declare a variable in tab and get data from it -->
-      <template slot-scope="TabRouter">
-        <component :is="TabRouter.currentTab"></component>
-      </template>
-    </tab-router>
-  </center>
+  <main-layout>
+    <center>
+      <tab-router :tabs="['Home', 'Project', 'About']">
+        <template slot-scope="TabRouter">
+          <component :is="TabRouter.currentTab"
+                     :home="home"
+                     :projects="project"
+                     :about="about"></component>
+        </template>
+      </tab-router>
+    </center>
+  </main-layout>
 </template>
 
 <script>
+import MainLayout from './layouts/Main'
 import TabRouter from './components/TabRouter'
 import Home from './pages/Home'
 import Project from './pages/Project'
@@ -85,12 +97,21 @@ import About from './pages/About'
 
 export default {
   components: {
+    MainLayout,
     TabRouter,
     Home,
     Project,
     About
+  },
+  data () {
+    return {
+      home: require('./common/json/home.json'),
+      project: require('./common/json/project.json'),
+      about: require('./common/json/about.json')
+    }
   }
 }
+
 </script>
 ```
 
@@ -103,11 +124,42 @@ export default {
     <img :src="logo" />
     <p>{{author}}</p>
     <p>{{readME}}</p>
-    <a :href="website1.href">{{website1.name}}</a>
-    <a :href="website2.href">{{website2.name}}</a>
-    <a :href="website3.href">{{website3.name}}</a>
+    <group :items="websites"
+           :width="90"
+           :fontSize="32"></group>
   </mainLayout>
 </template>
+
+<script>
+import mainLayout from '../layouts/Main'
+import group from '../components/Group'
+
+export default {
+  components: {
+    mainLayout,
+    group
+  },
+  props: ['home'],
+  computed: {
+    title () {
+      return this.home.title
+    },
+    logo () {
+      return this.home.logo
+    },
+    author () {
+      return this.home.author
+    },
+    readME () {
+      return this.home.readME
+    },
+    websites () {
+      return this.home.websites
+    }
+  }
+}
+
+</script>
 ```
 
 ### More pages just like this and the App will import them to use tabs to play.
