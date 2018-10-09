@@ -1,6 +1,5 @@
 <template>
   <mainlayout>
-    <tab-router :tabs="getNames()"></tab-router>
     <group :items="projects"
            :width="200"
            :fontSize="'30'"></group>
@@ -9,13 +8,11 @@
 
 <script>
 import mainlayout from '../layouts/Main'
-import TabRouter from '../components/TabRouter'
 import Group from '../components/Group'
 
 export default {
   components: {
     mainlayout,
-    TabRouter,
     Group
   },
   props: ['projects'],
