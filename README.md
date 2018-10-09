@@ -1,6 +1,6 @@
 # vue-tabpage
 
-> A Vue.js project, it extends a example from https://jsfiddle.net/chrisvfritz/Lp20op9o/
+> A vue-cli project, it extends a example from https://jsfiddle.net/chrisvfritz/Lp20op9o/
    
    ### preview
 ![loadingImage...](https://github.com/Saber2pr/MyWeb/raw/master/resource/Vue.jpg)
