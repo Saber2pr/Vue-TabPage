@@ -17,6 +17,7 @@ export default {
   },
   props: ['about']
 }
+
 </script>
 
 <style>

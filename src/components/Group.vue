@@ -13,6 +13,7 @@
 export default {
   props: ['items', 'width', 'fontSize']
 }
+
 </script>
 
 <style scoped>
