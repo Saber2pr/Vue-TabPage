@@ -30,9 +30,18 @@ export default {
   },
   data () {
     return {
-      home: require('./common/json/home.json'),
-      project: require('./common/json/project.json'),
-      about: require('./common/json/about.json')
+      index: require('./common/json/data.json')
+    }
+  },
+  computed: {
+    home () {
+      return this.index.home
+    },
+    project () {
+      return this.index.project
+    },
+    about () {
+      return this.index.project
     }
   }
 }

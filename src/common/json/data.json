@@ -1,0 +1,63 @@
+{
+  "home": {
+    "title": "AK-12's Website",
+    "logo": "https://github.com/Saber2pr/MyWeb/raw/master/resource/AK12.jpg",
+    "author": "I am AK-12",
+    "readME": "the Website is based on Vue",
+    "websites": [{
+      "name": "github",
+      "href": "https://github.com/Saber2pr"
+    }, {
+      "name": "csdn",
+      "href": "https://blog.csdn.net/u011607490"
+    }, {
+      "name": "bilibili",
+      "href": "https://space.bilibili.com/71959910/#/"
+    }]
+  },
+  "project": [{
+      "name": "HouseBlocks",
+      "href": "https://saber2pr.github.io/HouseBlocks/HouseBlocks_CocosCreator/build/web-mobile0.1/",
+      "img": "https://github.com/Saber2pr/MyWeb/raw/master/resource/newHouseBlocks.jpg"
+    },
+    {
+      "name": "csvTochat",
+      "href": "https://saber2pr.github.io/csvToChart/",
+      "img": "https://github.com/Saber2pr/MyWeb/raw/master/resource/csvToChartView.jpg"
+    },
+    {
+      "name": "CameraIdea",
+      "href": "https://saber2pr.github.io/CocosCreatorExam/CameraIdea/build/web-mobile/",
+      "img": "https://github.com/Saber2pr/MyWeb/raw/master/resource/camera.gif"
+    },
+    {
+      "name": "RandPlat",
+      "href": "https://saber2pr.github.io/CocosCreatorExam/RandPlat/build/web-mobile/",
+      "img": "https://github.com/Saber2pr/MyWeb/raw/master/resource/RandPlat.jpg"
+    },
+    {
+      "name": "ComputerBattle",
+      "href": "https://saber2pr.github.io/ComputerBattle/build/web-mobile/",
+      "img": "https://github.com/Saber2pr/MyWeb/raw/master/resource/CompView.gif"
+    },
+    {
+      "name": "imageToCode",
+      "href": "https://github.com/Saber2pr/openCvImageTransformer",
+      "img": "https://github.com/Saber2pr/MyWeb/raw/master/resource/badapple.jpg"
+    },
+    {
+      "name": "XmJUMP",
+      "href": "https://github.com/Saber2pr/XM_JUMP",
+      "img": "https://github.com/Saber2pr/MyWeb/raw/master/resource/XM_JUMP.jpg"
+    }
+  ],
+  "about": [{
+      "name": "saber2pr@gmail.com",
+      "href": "https://saber2pr@gmail.com"
+    },
+    {
+      "name": "1029985799@qq.com",
+      "href": "https://1029985799@qq.com"
+    }
+  ]
+}
