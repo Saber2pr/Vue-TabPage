@@ -1,8 +1,9 @@
 # vue-tabpage
 
 > A vue-cli project, it extends a example from https://jsfiddle.net/chrisvfritz/Lp20op9o/
-   
-   ### preview
+
+### preview
+
 ![loadingImage...](https://github.com/Saber2pr/MyWeb/raw/master/resource/Vue.jpg)
 
 - easy to make a tabpage!
@@ -55,19 +56,18 @@ export default {
   props: {
     tabs: Array
   },
-  data () {
+  data() {
     return {
       // default tab
       currentTab: this.tabs[0]
     }
   },
   computed: {
-    widthData () {
+    widthData() {
       return 100 / this.tabs.length + '%'
     }
   }
 }
-
 </script>
 ```
 
@@ -104,15 +104,23 @@ export default {
     Project,
     About
   },
-  data () {
+  data() {
     return {
-      home: require('./common/json/home.json'),
-      project: require('./common/json/project.json'),
-      about: require('./common/json/about.json')
+      index: require('./common/json/data.json')
+    }
+  },
+  computed: {
+    home() {
+      return this.index.home
+    },
+    project() {
+      return this.index.project
+    },
+    about() {
+      return this.index.project
     }
   }
 }
-
 </script>
 ```
 
@@ -142,24 +150,23 @@ export default {
   },
   props: ['home'],
   computed: {
-    title () {
+    title() {
       return this.home.title
     },
-    logo () {
+    logo() {
       return this.home.logo
     },
-    author () {
+    author() {
       return this.home.author
     },
-    readME () {
+    readME() {
       return this.home.readME
     },
-    websites () {
+    websites() {
       return this.home.websites
     }
   }
 }
-
 </script>
 ```
 
