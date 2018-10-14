@@ -8,7 +8,8 @@
 
 - easy to make a tabpage!
 
-> There is also a React demo like this[react-tabpage](https://github.com/Saber2pr/react-tabpage)
+> There is also a React demo like this:   
+> [react-tabpage](https://github.com/Saber2pr/react-tabpage)
 
 ## Build Setup
 
