@@ -16,6 +16,11 @@
     }]
   },
   "project": [{
+      "name": "2048",
+      "href": "https://saber2pr.github.io/MyWeb/build/2048/",
+      "img": "https://github.com/Saber2pr/MyWeb/raw/master/resource/2048.jpg"
+    },
+    {
       "name": "HouseBlocks",
       "href": "https://saber2pr.github.io/HouseBlocks/HouseBlocks_CocosCreator/build/web-mobile0.1/",
       "img": "https://github.com/Saber2pr/MyWeb/raw/master/resource/newHouseBlocks.jpg"
