@@ -19,14 +19,12 @@ export default {
 <style scoped>
 img {
   display: block;
-  margin-bottom: 20px;
   max-width: 100%;
   overflow: hidden;
   transform: scale(0.7);
 }
 a {
   display: block;
-  margin-top: 20px;
   border-radius: 100%;
   color: rgb(98, 114, 164);
   text-decoration: none;

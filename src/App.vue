@@ -41,7 +41,7 @@ export default {
       return this.index.project
     },
     about () {
-      return this.index.project
+      return this.index.about
     }
   }
 }
