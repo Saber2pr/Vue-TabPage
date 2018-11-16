@@ -21,6 +21,21 @@
       "img": "https://github.com/Saber2pr/MyWeb/raw/master/resource/2048.jpg"
     },
     {
+      "name": "EdgeJudge",
+      "href": "https://saber2pr.github.io/MyWeb/build/EdgeJudge/",
+      "img": "https://github.com/Saber2pr/MyWeb/raw/master/resource/edgejudge.jpg"
+    },
+    {
+      "name": "ccc-bullet",
+      "href": "https://saber2pr.github.io/MyWeb/build/ccc-bullet/build/web-mobile/",
+      "img": "https://github.com/Saber2pr/MyWeb/raw/master/resource/ccc-bullet.jpg"
+    },
+    {
+      "name": "colliBar",
+      "href": "https://saber2pr.github.io/MyWeb/build/collisionBar/build/web-mobile/",
+      "img": "https://github.com/Saber2pr/MyWeb/raw/master/resource/colliBar.jpg"
+    },
+    {
       "name": "HouseBlocks",
       "href": "https://saber2pr.github.io/HouseBlocks/HouseBlocks_CocosCreator/build/web-mobile0.1/",
       "img": "https://github.com/Saber2pr/MyWeb/raw/master/resource/newHouseBlocks.jpg"
